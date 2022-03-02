@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  * { margin: 0; padding: 0;}
+
+   #header {
+       position:absolute;
+       border: 1px solid gray;     
+       height: 100px;
+       width: 500px;
+     }
+   #footer {
+       position:absolute;
+       border: 1px solid black;
+       width: 500px;
+       height: 100px;
+       top:402px;
+   }
+   .sidebar {
+       position:absolute;
+       border:1px solid red ;
+       z-index: 3;
+       top:100px;
+       width: 250px;
+       height: 300px;
+   }
+   .content {
+       position:absolute;
+       border:1px solid gray ;
+       top:100px;
+       left:250px;
+       z-index: 6;
+       width: 250px;
+       height: 300px;
+   }
+   #body { position: relative;
+           border: 1px solid gainsboro;
+           width: 500px;
+           height: 300px;
+           }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"><br/>
+        <h1>헤더</h1>
+    </div>
+    <div id="body">
+       <div class="sidebar">사이드바</div>
+       <div class="content">컨텐츠</div> 
+    </div>
+    <div id="footer">
+        <h1>푸터</h1>
+    </div>
+</body>
+</html>
