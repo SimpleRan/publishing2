@@ -2,43 +2,22 @@
 <html lang="en">
 <head>
     <style>
-  * { margin: 0; padding: 0;}
-
-   #header {
-       position:absolute;
-       border: 1px solid gray;     
-       height: 100px;
-       width: 500px;
-     }
-   #footer {
-       position:absolute;
-       border: 1px solid black;
-       width: 500px;
-       height: 100px;
-       top:402px;
-   }
-   .sidebar {
-       position:absolute;
-       border:1px solid red ;
-       z-index: 3;
-       top:100px;
-       width: 250px;
-       height: 300px;
-   }
-   .content {
-       position:absolute;
-       border:1px solid gray ;
-       top:100px;
-       left:250px;
-       z-index: 6;
-       width: 250px;
-       height: 300px;
-   }
-   #body { position: relative;
-           border: 1px solid gainsboro;
-           width: 500px;
-           height: 300px;
-           }
+        body { width:550px; height:500px; 
+            border:1px solid black; }
+        #header { width:550px; height:99px; 
+            border:1px solid seagreen; }
+    
+        #footer { width:550px; height:99px; 
+            border:1px solid seagreen; }
+    
+        #body { position:relative; width:550px; height:299px;
+            border:1px solid slateblue;}
+        .sidebar { position:absolute; left:0px; top:0px; 
+                    width:200px; height:299px;
+                border:1px solid tomato;}
+        .content { position:absolute; left:200px; top:0px; 
+                    width:350px; height:299px;
+                    border:1px solid tomato;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
