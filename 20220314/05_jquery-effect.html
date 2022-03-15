@@ -64,8 +64,45 @@
             //#btn4를 클릭했을때 #btn4의 부모(.parent())의
             // 다음 형제(.next())를 말아올려 숨기는 이벤트를 걸어주세요
             // hint) .parent().next().sli...
-            $("btn4").click(function(){
-                $(this).parent().next().slideUp();
+            $("#btn4").click(function(){
+                $("#btn4").parent().next().slideUp("slow");
+            });
+
+            // #btn5를 누르면 다시 slideDown이 실행되게 해주세요
+            $("#btn5").click(function(){
+                $("#btn5").parent().next().slideDown("slow");
+            });
+            // #btn6을 누르면 slideToggle이 실행되게 해주세요.
+            $("#btn6").click(function(){
+                $("#btn6").parent().next().slideToggle("fast");
+            });
+            // #btn7을 누르면 클릭한 요소의 부모의 다음 형제에 대해서 
+            // fadeOut을 걸어주세요.
+            $("#btn7").click(function(){
+                $("#btn7").parent().next().fadeOut();
+            });
+            // #btn8을 누르면 클릭한 요소의 부모의 다음 형제에 대해서
+            // fadeIn을 걸어주세요.
+            $("#btn8").click(function(){
+                $("#btn8").parent().next().fadeIn();
+            });
+            // #btn9를 누르면 클릭한 요소의 부모의 다음 형제에 대해서
+            // fedToggle을 걸어주세요
+            $("#btn9").click(function(){
+                $("#btn9").parent().next().fadeToggle();
+            });
+
+            // fadeTo(속도, 투명도);
+            // 속도는 fast, slow, normal 아니면 밀리초(1000분의 1초)
+            // 투명도 => 0.3(70% 투명), 1(0%투명)
+            // #btn10에 대해서 0.3 투명도를
+            $("#btn10").click(function(){
+                $("#btn10").parent().next().fadeTo("slow", "0.3");
+            });
+            // #bnt11에 대해서 1 투명도를 줘서 작성해주세요.
+          
+            $("#btn11").click(function(){
+                $("#box3").fadeTo("slow", "1");
             });
         });
     </script>
